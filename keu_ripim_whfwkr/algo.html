@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>RIPIM BY E.U.KIM</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">RIPIM</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">소개 | Introducion</a></li>
+          <li><a href="rosua.html">개념 | RIP</a></li>
+          <li class="active"><a href="algo.html">알고리즘 | Algo</a></li>
+          <li><a href="imple.html">구현 | Implementation</a></li>
+          <li><a href="com.html">커뮤니티 | Community</a></li>
+        </ul>
+       
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        
+           <!-- algorithm Code -->
+									<h2>Algorithm</h2>
+									<pre><code>stack[count]=position; // 최소 값을 구할 수 없다 명령을 수행후 다시 최대값으로 초기화 하자
+                                    } // 한번 사용했던 최소 값은 중복을 막기 위해 stack 배열에 넣자
+                                    for(i=0 ; i {
+                                    if(load[i] <0)
+                                    {
+                                    load[i]=starting;
+                                    }
+                                    }
+                                    i=ending; // 이 부분은 load 배열에서 각 경로들이 갱신될때 마다
+                                    while(1) // 저장이 되어 있다 이걸 거꾸로 되집어 가면
+                                    { // 시작점과 끝의 경로를 구할 수 있는데 위에 시작 값으로 초기화한
+                                    FastWay[Fastcount++]=i; // 이유는 그 흔적 마지막에는 시작 값으로 오기 때문이다
+                                    if(i == starting) break; // 이 부분은 직접 분석 해보자
+                                    i=load[i];
+                                    }
+                                    printf("\n %c 에 대한 최단경로를 구하였습니다! \n\n", ending+65);
+                                    // 65 를 더한 이유는 알파벳으로 출력하기 위해서 65 를 더했다
+                                    puts(" ");
+                                    for(i=65 ; i<75 ; i++) // 이부분도 알파벳으로 표시 하기 위해 65 75를 사용
+                                    {
+                                    printf("%4c", i);
+                                    }
+                                    puts(" ");
+                                    for(i=0 ; i {
+                                    printf("%4d", map[i]);
+                                    }
+                                    puts(" ");
+                                    puts(" ");
+                                    printf(" 최단 경로\n");
+                                    for(i=Fastcount-1 ; i>0 ; i--)
+                                    {
+                                    printf(" %c -> ", FastWay[i]+65);
+                                    }
+                                    printf(" %c ", FastWay[0]+65);
+                                    printf("\n\n%4c 도착지의 최단거리 : %d\n\n", ending+65, map[ending]);
+                                    }
+                                    void main()
+                                    {
+                                    int choice ; //메뉴 선택 변수
+                                    int departure, ending; //출발지 도착지 변수
+                                    MapPrint(); //맵 프린트 호출
+                                    while(1)
+                                    {
+                                    printf(" <1> OSPF <2> 맵출력 <3> 깨끗이 <4> 종료 : ");
+                                    scanf("%d", &choice); //메뉴 선택 변수 입력
+                                    switch(choice)
+                                    {
+                                    case 1: // 메뉴 1번 선택시 OSPF 시작
+                                    printf("시작지를 입력 : ");
+                                    scanf("%d", &departure); // 라우터 시작점 입력
+                                    printf("도착지를 입력 : ");
+                                    scanf("%d", &ending); // 라우터 도착점 입력
+                                    OSPF(departure, ending);//OSPF 함수호출(시작점 도착점)
+                                    break;
+                                    case 2: // 메뉴 2번 선택시 맵 프린트
+                                    MapPrint();
+                                    break;
+                                    case 3: // 메뉴 3번 선택시 화면 지움
+                                    system("cls");
+                                    break;
+                                    case 4: // 메뉴 4번 선택시 프로그램 종료
+                                    exit(0);
+                                    }
+                                    }
+                                    }
+</code></pre>
+
+
+          </p>
+          
+        </section>
+      </div>
+
+      
+
+       <!-- Copyright -->
+       <div id="copyright">
+        <ul>
+          <li>comedu</li>
+          <li>RIPIM</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

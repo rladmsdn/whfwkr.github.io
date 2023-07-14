@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>RIPIM BY E.U.KIM</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">RIPIM</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">소개 | Introducion</a></li>
+          <li class="active"><a href="rosua.html">개념 | RIP</a></li>
+          <li><a href="algo.html">알고리즘 | Algo</a></li>
+          <li><a href="imple.html">구현 | Implementation</a></li>
+          <li><a href="com.html">커뮤니티 | Community</a></li>
+        </ul>
+       
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <h2>개념</h2>
+        				<dl>
+										<dt>RIP 라우팅 프로토콜</dt>
+										<dd>
+											<p>RIP(거리 벡터 프로토콜)은 네트워크에서 사용되는 내부 게이트웨이 프로토콜(IGP) 중 하나로, 거리 벡터 알고리즘을 기반으로 작동합니다. RIP는 경로 선택 및 패킷 전달을 위해 사용되는 라우팅 테이블을 유지하고 업데이트하는 데 사용됩니다.</br>
+                                                RIP는 일반적으로 중소형 네트워크에서 사용되며, 네트워크의 라우팅 정보를 주기적으로 교환하고 최적의 경로를 결정하는 데 사용됩니다. RIP는 수많은 라우터에 의해 사용되는 경우에도 효과적이며, 이러한 이유로 많은 네트워크 관리자가 RIP를 선택합니다.</p>
+										</dd>
+										<dt>RIP 작동 방식</dt>
+										<dd>
+                                            <ol>
+											<li>거리 측정: RIP는 라우팅 테이블에서 모든 목적지까지의 거리를 측정합니다. 기본적으로 RIP는 라우팅 도메인 내의 목적지까지의 홉 수를 거리로 측정합니다. 최대 홉 수는 15로 정의되어 있습니다. 16 홉 이상인 경로는 무한대로 간주되어 경로로서 사용되지 않습니다.</br></li>
+                                            <li>업데이트 교환: RIP 라우터는 주기적으로 업데이트 메시지를 교환하여 라우팅 정보를 공유합니다. 이 업데이트 메시지에는 라우팅 테이블에 대한 정보가 포함되어 있으며, 주변 라우터에게 전달됩니다. RIP는 주기적으로 업데이트를 보내고, 변경 사항이 발생할 때도 업데이트를 전송합니다.</br></li>
+                                            <li>최적 경로 선택: RIP는 받은 업데이트 메시지를 기반으로 최적의 경로를 선택합니다. 경로의 비용(거리)가 더 작을수록 우선 순위가 높아집니다. RIP는 기본적으로 경로 비용을 최대 15 홉으로 제한합니다. 따라서 16 홉 이상인 경로는 선택되지 않습니다.</br></li>
+                                            <li>수렴: RIP는 경로 업데이트를 주기적으로 수신하고 최적의 경로를 선택함으로써 네트워크의 수렴을 달성합니다. 라우팅 테이블은 주기적으로 업데이트되며, 변경된 경로에 대한 업데이트 메시지가 전파됩니다.</p>
+										</ol></dd>
+										<dt>RIP 장점</dt>
+										<dd>
+											<p>마니</p>
+										</dd>
+									</dl>
+          <p>
+            ..
+          </p>
+          <p>
+            ..
+          </p>
+        </section>
+      </div>
+
+      
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>comedu</li>
+          <li>RIPIM</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
